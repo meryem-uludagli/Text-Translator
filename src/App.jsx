@@ -7,7 +7,6 @@ import { getLanguages } from "./redux/actions";
 
 const App = () => {
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(getLanguages());
   }, []);
