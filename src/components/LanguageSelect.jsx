@@ -7,6 +7,7 @@ import {
 } from "../redux/slices/translateSlice";
 import { useMemo } from "react";
 import { translateText } from "../redux/actions";
+import { TfiLoop } from "react-icons/tfi";
 
 const LanguageSelect = () => {
   const { isLoading, languages } = useSelector((store) => store.language);
@@ -44,7 +45,7 @@ const LanguageSelect = () => {
         onClick={() => dispatch(changeLangs())}
         className="bg-zinc-700 py-2 px-6 hover:bg-zinc-800 transition rounded text-white"
       >
-        Değiş
+        <TfiLoop />
       </button>
 
       <Select
